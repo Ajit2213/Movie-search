@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(161, 193, 220);
+
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+nav .search{
+    display: flex;
+    column-gap: 10px;
+}
+
+.movie input{
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+}
+#btn{
+    width:60px;
+    border: none;
+    border-radius: 5px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container{
+    text-align: center;
+    font-size:25px;
+
+}
+.session{
+    margin: 20px;
+    display: flex;
+    column-gap: 10px;
+    background-color: #fff;
+    padding: 22px;
+    width: 1000px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+
+.session h1,.rating{
+    text-align: center;
+}
+
+.session a{
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.session .genre{
+   display: block;
+    background-color:orange;
+    /* border: 2px solid black; */
+    width:80%;
+    height:30px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */ 
+    text-align: center;
+}
+
+.session p{
+    margin-top: 22px;
+}
+
+.session span{
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:1100px) {
+    .session{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:700px){
+    nav{
+        display:block;
+        height: 120px;
+    }
+    .search{
+        display:flex;
+        justify-content: center;
+        margin-top: 11px;
+    }
+    .name{
+        text-align: center;
+    }
+    .name span{
+        /* text-align: center; */
+       margin-top: 5px;
+    }
+    .session{
+        display: block;
+        text-align: center;
+        width: 80%;
+    }
+}
+
+@media screen and(max-width:450px) {
+    .movie input{
+        width: 50%;
+    }
+    .session img{
+        width: 80%;
+    }
+}
